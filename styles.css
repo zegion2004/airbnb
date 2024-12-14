@@ -1,0 +1,201 @@
+/* Reset */
+body, h1, h2, h3, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF385C;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #6A6A6A;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-item.active {
+    color: #222;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-btn {
+
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.language-svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.menu-item {
+    font-size: 0.875rem;
+    color: #222;
+    text-decoration: none;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+    flex: 1;
+    border-right: 1px solid #ddd;
+}
+
+.search-item:last-child {
+    border-right: none;
+}
+
+.search-item p {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.search-item span {
+    font-size: 0.875rem;
+    color: #6A6A6A;
+}
+
+.search-btn {
+    background-color: #FF385C;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .search-item {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    .search-item:last-child {
+        border-bottom: none;
+    }
+
+    .search-btn {
+        margin: 20px auto;
+    }
+}
+button {
+    border: 1px solid #ddd; /* Đường viền nhạt */
+    background-color: #fff; /* Nền trắng */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Khoảng cách giữa các biểu tượng */
+    gap: 10px;
+    padding: 10px 15px; /* Đệm bên trong */
+    border-radius: 25px; /* Bo tròn để giống khung trong hình */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #f7f7f7; /* Màu nền khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hiệu ứng bóng tăng khi hover */
+}
+
+.menu-icon,
+.profile-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    stroke: #333; /* Màu của biểu tượng menu */
+    stroke-width: 3;
+    fill: none;
+}
+
+.user-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    fill: #666; /* Màu của biểu tượng user */
+    transition: fill 0.3s ease;
+}
+
+button:hover .user-icon, .language-svg {
+    fill: #333; /* Thay đổi màu biểu tượng khi hover */
+}
