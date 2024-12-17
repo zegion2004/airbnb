@@ -1,0 +1,227 @@
+/* Tổng thể */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Circular, BlinkMacSystemFont, Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222222;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.header {
+  border-bottom: 1px solid #ddd; /* Màu viền */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  padding-bottom: 20px;
+}
+
+/* Layout Menu */
+.lay-out-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 80px;
+  padding: 0 80px;
+  max-width: 2520px;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 460px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logo-container span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FF385C;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  margin-right: 250px;
+}
+
+.nav-item {
+  font-size: 14px;
+  text-decoration: none;
+  color: #222222;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+
+/* Menu bên phải */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.language-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon .hamburger-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #222222;
+  stroke-width: 2;
+  margin-right: 8px;
+}
+
+.profile-icon .user-icon {
+  width: 24px;
+  height: 24px;
+  fill: #717171;
+}
+/* Mục điều hướng chung */
+.nav-item,
+.menu-item {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+    padding: 8px 16px; /* Khoảng cách tạo không gian */
+    border-radius: 24px; /* Bo tròn góc */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng mượt */
+}
+
+/* Hiệu ứng khi hover */
+.nav-item:hover,
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Màu nền nhạt */
+  color: #222222;
+  cursor: pointer;
+}
+
+/* Trạng thái active */
+.nav-item.active {
+
+  font-weight: bold;
+}
+
+/* Menu bên phải */
+.menu-item {
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+
+/* Đây là container chính của thanh tìm kiếm */
+.new-search-bar {
+  display: flex; /* Sử dụng Flexbox để xếp các phần tử theo chiều ngang */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  background: white; /* Màu nền trắng cho thanh tìm kiếm */
+  border-radius: 30px; /* Bo tròn các góc của thanh tìm kiếm với bán kính 30px */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng nhẹ */
+  padding: 10px 15px; /* Khoảng đệm bên trong thanh tìm kiếm (trên/dưới 10px, trái/phải 15px) */
+  max-width: 800px; /* Giới hạn chiều rộng tối đa của thanh tìm kiếm */
+  width: 100%; /* Chiếm toàn bộ chiều rộng của container cha */
+  margin: 0 auto; /* Căn giữa thanh tìm kiếm theo chiều ngang */
+}
+
+/* Các phần tử con trong thanh tìm kiếm */
+.new-search-item {
+  display: flex; /* Dùng Flexbox để xếp nhãn và ô nhập liệu theo chiều dọc */
+  flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+  padding: 0 15px; /* Khoảng cách bên trái và bên phải giữa các ô */
+  flex: 1; /* Các ô nhập liệu sẽ chiếm không gian đều nhau trong thanh tìm kiếm */
+}
+
+/* Nhãn của ô nhập liệu */
+.new-search-item label {
+  font-size: 12px; /* Kích thước chữ nhỏ cho nhãn */
+  font-weight: bold; /* Nhãn được in đậm */
+  color: #222222; /* Màu chữ xám đậm */
+}
+
+/* Ô nhập liệu và dropdown */
+.new-search-item input,
+.new-search-item select {
+  border: none; /* Xóa viền mặc định của ô nhập liệu */
+  border-bottom: 1px solid #ddd; /* Thêm viền dưới mỏng màu xám nhạt */
+  outline: none; /* Xóa đường viền khi ô nhập liệu được chọn */
+  font-size: 14px; /* Kích thước chữ bên trong ô nhập liệu */
+  margin-top: 5px; /* Khoảng cách từ nhãn xuống ô nhập liệu */
+  padding: 5px 0; /* Tạo khoảng cách trên/dưới bên trong ô nhập liệu */
+  background: transparent; /* Làm nền ô nhập liệu trong suốt */
+  color: #222222; /* Màu chữ trong ô nhập liệu là xám đậm */
+}
+
+/* Hiệu ứng khi ô nhập liệu được focus (kích hoạt) */
+.new-search-item input:focus,
+.new-search-item select:focus {
+  border-bottom: 1px solid #FF385C; /* Đổi màu viền dưới thành màu đỏ nổi bật khi focus */
+}
+
+/* Đường kẻ dọc ngăn cách giữa các ô nhập liệu */
+.new-separator {
+  width: 1px; /* Độ dày của đường kẻ */
+  background-color: #ddd; /* Màu xám nhạt cho đường kẻ */
+  height: 40px; /* Chiều cao của đường kẻ */
+}
+
+/* Nút tìm kiếm hình tròn */
+.new-search-button {
+  background-color: #FF385C; /* Màu nền đỏ cho nút tìm kiếm */
+  color: white; /* Màu chữ hoặc biểu tượng bên trong là trắng */
+  border: none; /* Xóa viền của nút */
+  border-radius: 50%; /* Bo tròn 100%, tạo hình dạng tròn */
+  width: 50px; /* Chiều rộng của nút */
+  height: 50px; /* Chiều cao của nút */
+  display: flex; /* Sử dụng Flexbox để căn giữa biểu tượng */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  cursor: pointer; /* Khi di chuột vào, con trỏ sẽ chuyển thành biểu tượng bàn tay */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà trong 0.3 giây */
+}
+
+/* Hiệu ứng khi di chuột vào nút tìm kiếm */
+.new-search-button:hover {
+  background-color: #e0314d; /* Đổi màu nền nút thành đỏ đậm hơn khi hover */
+}
+
+/* Biểu tượng SVG bên trong nút tìm kiếm */
+.new-search-button svg {
+  width: 20px; /* Chiều rộng của biểu tượng SVG */
+  height: 20px; /* Chiều cao của biểu tượng SVG */
+  stroke: white; /* Màu của đường nét (icon) là trắng */
+  stroke-width: 4; /* Độ dày của đường nét trong biểu tượng SVG */
+}
+
+
