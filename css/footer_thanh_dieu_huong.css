@@ -1,0 +1,143 @@
+
+.thanh-dieu-huong {
+  display: flex;
+  padding : 0 80px;
+  align-items: center;
+}
+.thanh-cong-cu {
+  display: flex;
+  align-items: center;
+}
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  width:900px;
+  height: 75px;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--linaria-theme_spacing-micro8px);
+  align-items: center;
+  margin: 10px 0px;
+  padding: 4px 0px;
+  color: #6a6a6a;
+}
+
+.box-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.box-item span {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px;;
+}
+
+.box-item:hover {
+  color: #222;
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+/*chỉnh sửa icon bộ lọc */
+.filter-button {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  box-sizing: border-box;
+  height: 50px;
+  min-width: 100px;
+  margin: 0px 20px;
+  padding: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  border-color: #222222;
+}
+
+.filter-button .icon {
+  height: 16px;
+  width: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+
+.filter-button span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+  
+/* tổng sau thuế*/
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 205px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+
+.toggle-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+  user-select: none;
+}
+.toggle-container:hover {
+  border-color: #222222;
+}
+.toggle-switch {
+  position: relative;
+  width: 35px;
+  height: 22.5px;
+  background-color: #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.toggle-switch.active {
+  background-color: #222222;
+}
+
+.toggle-switch.active::before {
+  transform: translateX(13px);
+}
+
+.toggle-switch.active::after {
+  content: "\2713"; /* Checkmark character */
+  position: absolute;
+  right: 6px;
+  top: 56%;
+  transform: translateY(-50%);
+  color: #222222;
+  font-size: 14px;
+  font-weight: bold;
+}

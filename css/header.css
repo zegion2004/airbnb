@@ -38,8 +38,7 @@ body {
 }
 
 .logo {
-  height: 50px;
-  width: auto;
+
 }
 
 .logo-container span {
@@ -204,7 +203,7 @@ body {
   border-radius: 50%; /* Bo tròn 100%, tạo hình dạng tròn */
   width: 50px; /* Chiều rộng của nút */
   height: 50px; /* Chiều cao của nút */
-  display: flex; /* Sử dụng Flexbox để căn giữa biểu tượng */
+  display: flex; /* Sử dụng Flexbox để căn giữa biểu tượng */ 
   justify-content: center; /* Căn giữa theo chiều ngang */
   align-items: center; /* Căn giữa theo chiều dọc */
   cursor: pointer; /* Khi di chuột vào, con trỏ sẽ chuyển thành biểu tượng bàn tay */
@@ -223,5 +222,4 @@ body {
   stroke: white; /* Màu của đường nét (icon) là trắng */
   stroke-width: 4; /* Độ dày của đường nét trong biểu tượng SVG */
 }
-
 
