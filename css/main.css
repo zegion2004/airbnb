@@ -59,3 +59,37 @@
     color: #ff5a5f;
     font-weight: bold;
 }
+
+
+/* hien thi them */
+
+.content-container {
+    width: 1350px;
+    height: auto;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Description Text */
+.description {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Button Style */
+.show-more-btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background-color: #444;
+}

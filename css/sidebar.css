@@ -1,0 +1,71 @@
+.inspiration-section {
+    margin: 20px auto;
+    padding: 20px 80px;
+    background-color: #fff;
+    text-align: left; /* Căn nội dung bên trái */
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Tab menu styles */
+.tab-menu {
+    display: flex;
+    justify-content: flex-start; /* Căn các tab về bên trái */
+    gap: 15px;
+}
+
+.tab {
+    font-size: 14px;
+    color: #888;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0 20px;
+}
+
+/* Location list styles */
+.location-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin: 15px 0px;
+}
+
+.location-item {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.location-item strong {
+    color: #000;
+}
+
+.location-item p {
+    color: #666;
+    margin: 5px 0 0;
+}
+
+/* Show more styles */
+.show-more {
+    text-align: left; /* Căn nút "Hiển thị thêm" về bên trái */
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
