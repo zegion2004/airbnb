@@ -1,0 +1,71 @@
+/* Thanh hiển thị danh sách khu vực */
+.hien-thi-dia-diem {
+    position: absolute; /* Định vị tuyệt đối để đè lên các thành phần khác */
+    width: 100%;
+    max-width: 850px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 32px 24px;
+    z-index: 1000; /* Ưu tiên cao hơn các thành phần khác */
+    display: none; /* Ẩn theo mặc định */
+    transition: all 0.3s ease;
+    left: 334px;
+    top: 153px;
+    height: auto;
+    width: 385px;
+
+}
+
+.hien-thi-dia-diem.active {
+    display: block; /* Hiển thị khi được kích hoạt */
+}
+
+.header-title {
+    font-size: 16px;
+    font-weight:bold;
+    color: #222;
+    margin: 0px 0px 16px 8px;
+}
+
+.list-khu-vuc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.khu-vuc-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    width: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.khu-vuc-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.khu-vuc-item:hover {
+    background-color: #ddd;
+    transform: translateY(-4px); /* Hiệu ứng nổi lên khi hover */
+}
+
+.khu-vuc-item span {
+    font-size: 14px;
+    color: #222;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

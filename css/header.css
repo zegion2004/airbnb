@@ -1,6 +1,5 @@
 
 .header {
- 
   display: flex;
   flex-wrap: wrap; /* Cho phép các hộp tự xuống dòng */
   justify-content: center; /* Căn giữa các hộp theo chiều ngang */

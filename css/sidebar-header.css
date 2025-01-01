@@ -7,6 +7,7 @@
 .thanh-cong-cu {
   display: flex;
   align-items: center;
+  width: 1150px;
 }
 
 /* Tổng thể container */
@@ -53,7 +54,7 @@
 }
 
 .box-item span {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #222;
 }
@@ -158,7 +159,7 @@
 }
 
 .filter-button span {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   margin-left: 10px;
 }
@@ -168,7 +169,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 205px;
+  width: 210px;
   height: 50px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -178,7 +179,7 @@
 
 
 .toggle-label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #222222;
   user-select: none;

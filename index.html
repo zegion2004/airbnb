@@ -11,327 +11,513 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/sidebar-header.css">
     <link rel="stylesheet" href="css/header-sidebar.css">
+    <link rel="stylesheet" href="css/dia-diem.css">
+    <link rel="stylesheet" href="css/lich.css">
+    <link rel="stylesheet" href="css/khach.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div class="lay-out-menu">
-            <!-- Logo -->
-            <div class="logo-airbnb">
-                <img src="assets/icons/airbnb.svg" class="logo" alt="airbnb" />
-            </div>
-        </div>
-              
-        <div class="trai-nghiem">
-            <div class="header-bar">
-                <div class="tab-cho-o" >Chỗ ở</div >
-                <div class="tab-trai-nghiem" >Trải nghiệm</div>
-            </div>
-        </div>
-
-        <div class="Cho-thue">
-
-            <div class="le-trai">
-                <div class="text-cho-thue">Cho thuê chỗ ở qua Airbnb</div>
-
-                <div class="icon-dia-cau">
-                    <img src="assets/icons/icon_world.svg" class="world" alt="dia-cau">
-                </div>
-            </div>
+  <!-- Header -->
+  <div class="header">
+      <div class="lay-out-menu">
+          <!-- Logo -->
+          <div class="logo-airbnb">
+              <img src="assets/icons/airbnb.svg" class="logo" alt="airbnb" />
+          </div>
+      </div>
             
-            <div class="icon-dang-ki">
-                <img src="assets/icons/three_icon.svg" class="three" alt="three-icon">
-                <img src="assets/icons/logo_the_gioi.svg" class="icon-person" alt="person">
-            </div>
-        </div>
-        
-        <div class="thanh-tim-kiem">
-            <div class="muc-tim-kiem dia-diem">
-                <span class="tieu-de">Địa điểm</span>
-                <span class="noi-dung">Tìm kiếm điểm đến</span>
-            </div>
-            <div class="thanh-phan-cach"></div>
-            <div class="muc-tim-kiem nhan-phong">
-                <span class="tieu-de">Nhận phòng</span>
-                <span class="noi-dung">Thêm ngày</span>
-            </div>
-            <div class="thanh-phan-cach"></div>
-            <div class="muc-tim-kiem tra-phong">
-                <span class="tieu-de">Trả phòng</span>
-                <span class="noi-dung">Thêm ngày</span>
-            </div>
-            <div class="thanh-phan-cach"></div>
-            <div class="khach-noi-dung">
-                <div class="khach">
-                    <span class="tieu-de">Khách</span>
-                    <span class="noi-dung">Thêm khách</span>
-                </div>
-                <div class="nut-tim-kiem">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: white; stroke-width: 4; overflow: visible;">
-                        <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
-                    </svg>                    
-                </div>
-            </div>
-        </div>
-          
-    </div>
+      <div class="trai-nghiem">
+          <div class="header-bar">
+              <div class="tab-cho-o" >Chỗ ở</div >
+              <div class="tab-trai-nghiem" >Trải nghiệm</div>
+          </div>
+      </div>
 
-    <! thanh điều hướng !>
-    <div class="thanh-dieu-huong">
-        <!-- thanh cong cu -->
-        <div class="thanh-cong-cu">
-            <div class="carousel-container">
-                <!-- Nút điều hướng trái -->
-                <button aria-label="Trang danh mục trước" class="carousel-button prev-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false">
-                    <path d="m10.55.3 1.42 1.4L5.67 8l6.3 6.3-1.42 1.4-6.59-6.58a1.58 1.58 0 0 1-.1-2.13l.1-.11z"></path>
-                  </svg>
-                </button>
-                
-                <!-- Vùng chứa các mục -->
-                <div class="carousel-track">
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt="Đảo">
-                    <span>Đảo</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="Biểu tượng">
-                    <span>Biểu tượng</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="Nhà khung">
-                    <span>Nhà khung</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="Lâu đài">
-                    <span>Lâu đài</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Bếp">
-                    <span>Bếp</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="Khung cảnh">
-                    <span>Khung cảnh</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Phòng">
-                    <span>Phòng</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="Ven hồ">
-                    <span>Ven hồ</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="Nông trại">
-                    <span>Nông trại</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg" alt="Bãi biển">
-                    <span>Bãi biển</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt="Phòng">
-                    <span>Phòng</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="Khung cảnh">
-                    <span>Khung cảnh</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="Hồ bơi">
-                    <span>Hồ bơi</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="Nông thôn">
-                    <span>Nông thôn</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="Nhà trên cây">
-                    <span>Nhà trên cây</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt="Nhà nhỏ">
-                    <span>Nhà nhỏ</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="Biệt thự">
-                    <span>Biệt thự</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt="Ưa chuộng">
-                    <span>Ưa chuộng</span>
-                  </div>
-                  <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="Cabin">
-                    <span>Cabin</span>
-                  </div>
-                </div>
-                
-                <!-- Nút điều hướng phải -->
-                <button aria-label="Trang danh mục tiếp theo" class="carousel-button next-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false">
-                    <path d="M5.41.3 4 1.7 10.3 8 4 14.3l1.41 1.4 6.6-6.58c.57-.58.6-1.5.1-2.13l-.1-.11z"></path>
-                  </svg>
-                </button>
+      <div class="Cho-thue">
+
+          <div class="le-trai">
+              <div class="text-cho-thue">Cho thuê chỗ ở qua Airbnb</div>
+
+              <div class="icon-dia-cau">
+                  <img src="assets/icons/icon_world.svg" class="world" alt="dia-cau">
               </div>
+          </div>
+          
+          <div class="icon-dang-ki">
+              <img src="assets/icons/three_icon.svg" class="three" alt="three-icon">
+              <img src="assets/icons/logo_the_gioi.svg" class="icon-person" alt="person">
+              <div class="dropdown-menu">
+                <ul>
+                  <li>Đăng ký</li>
+                  <li>Đăng nhập</li>
+                  <li>Cho thuê chỗ ở qua Airbnb</li>
+                  <li>Tổ chức trải nghiệm</li>
+                  <li>Trung tâm trợ giúp</li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="thanh-tim-kiem">
+        <div class="muc-tim-kiem dia-diem" onclick="toggleSearchArea()">
+          <span class="tieu-de">Địa điểm</span>
+          <span class="noi-dung">Tìm kiếm điểm đến</span>
+        </div>
 
-            <div class="filter-button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" class="icon">
-                <path fill="none" d="M7 16H3m26 0H15M29 6h-4m-8 0H3m26 20h-4M7 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM17 6a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 20a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0H3"></path>
+        <div class="thanh-phan-cach"></div>
+
+        <div class="muc-tim-kiem nhan-phong" onclick="openPopup('nhan-phong')">
+          <span class="tieu-de">Nhận phòng</span>
+          <span class="noi-dung" id="nhan-phong-text">Thêm ngày</span>
+        </div>
+
+        <div class="thanh-phan-cach"></div>        
+        <div class="muc-tim-kiem tra-phong" onclick="openPopup('tra-phong')">           
+          <span class="tieu-de">Trả phòng</span>  
+          <span class="noi-dung" id="tra-phong-text">Thêm ngày</span>
+        </div>
+      
+        <div class="thanh-phan-cach"></div>
+
+        <div class="khach-noi-dung" onclick="toggleGuestsPopup()">
+          <div class="khach">
+              <span class="tieu-de">Khách</span>
+              <span class="noi-dung" id="khach-text">Thêm khách</span>
+          </div>
+          <div class="nut-tim-kiem">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: white; stroke-width: 4; overflow: visible;">
+                  <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+              </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Thanh hiển thị danh sách khu vực -->
+      <div class="hien-thi-dia-diem hidden" id="searchArea">
+        <div class="header-title">Tìm kiếm theo khu vực</div>
+        <div class="list-khu-vuc">
+            <button class="khu-vuc-item">
+                <img src="https://a0.muscache.com/pictures/f9ec8a23-ed44-420b-83e5-10ff1f071a13.jpg" alt="Tìm kiếm linh hoạt">
+                <span>Tìm kiếm li ...</span>
+            </button>
+            <button class="khu-vuc-item">
+                <img src="https://a0.muscache.com/im/pictures/7b5cf816-6c16-49f8-99e5-cbc4adfd97e2.jpg" alt="Châu Âu">
+                <span>Châu Âu</span>
+            </button>
+            <button class="khu-vuc-item">
+                <img src="https://a0.muscache.com/im/pictures/c193e77c-0b2b-4f76-8101-b869348d8fc4.jpg" alt="Hàn Quốc">
+                <span>Hàn Quốc</span>
+            </button>
+            <button class="khu-vuc-item">
+                <img src="https://a0.muscache.com/im/pictures/4e762891-75a3-4fe1-b73a-cd7e673ba915.jpg" alt="Hoa Kỳ">
+                <span>Hoa Kỳ</span>
+            </button>
+            <button class="khu-vuc-item">
+                <img src="https://a0.muscache.com/im/pictures/924d2b73-6c65-4d04-a2ad-bbc028299658.jpg" alt="Thái Lan">
+                <span>Thái Lan</span>
+            </button>
+            <button class="khu-vuc-item">
+                <img src="https://a0.muscache.com/im/pictures/42a1fb0f-214c-41ec-b9d7-135fbbdb8316.jpg" alt="Úc">
+                <span>Úc</span>
+            </button>
+        </div>
+      </div>
+      
+            <!-- Popup lịch -->
+      <div class="popup hidden" id="popup">
+        <div class="popup-content-test">
+            <h3>Chọn ngày</h3>
+            <div class="lich-thang">
+                <!-- Tháng 1 năm 2025 -->
+                <div class="thang">
+                    <h4>Tháng 1 năm 2025</h4>
+                    <div class="ngay">
+                        <!-- Các ngày trong tháng -->
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span>31</span>
+                    </div>
+                </div>
+                <!-- Tháng 2 năm 2025 -->
+                <div class="thang">
+                    <h4>Tháng 2 năm 2025</h4>
+                    <div class="ngay">
+                        <!-- Các ngày trong tháng -->
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Nút đóng popup -->
+            <button class="close-btn" onclick="closePopup()">Đóng</button>
+        </div>
+      </div>
+
+      <div class="popup-guests hidden" id="guests-popup">
+        <div class="popup-content">
+            <div class="row">
+                <div class="info">
+                  <span class="tieu-de">Người lớn</span>
+                  <span class="mo-ta">Từ 13 tuổi trở lên</span>
+                </div>
+                <div class="controls">
+                    <button onclick="updateGuests('adults', -1)">-</button>
+                    <span id="adults-count">0</span>
+                    <button onclick="updateGuests('adults', 1)">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="info">
+                  <span class="tieu-de">Trẻ em</span>
+                  <span class="mo-ta">Độ tuổi 2 – 12</span>
+                </div>
+                <div class="controls">
+                    <button onclick="updateGuests('children', -1)">-</button>
+                    <span id="children-count">0</span>
+                    <button onclick="updateGuests('children', 1)">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="info">
+                  <span class="tieu-de">Em bé</span>
+                  <span class="mo-ta">Dưới 2 tuổi</span>
+                </div>
+                <div class="controls">
+                    <button onclick="updateGuests('infants', -1)">-</button>
+                    <span id="infants-count">0</span>
+                    <button onclick="updateGuests('infants', 1)">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="info">
+                  <span class="tieu-de">Thú cưng</span>
+                  <span class="mo-ta">Bạn sẽ mang theo động vật phục vụ?</span>
+                </div>
+                <div class="controls">
+                    <button onclick="updateGuests('pets', -1)">-</button>
+                    <span id="pets-count">0</span>
+                    <button onclick="updateGuests('pets', 1)">+</button>
+                </div>
+            </div>
+            <button class="close-btn" onclick="closeGuestsPopup()">Đóng</button>
+        </div>
+      </div>
+
+  </div>
+
+  <! thanh điều hướng !>
+  <div class="thanh-dieu-huong">
+      <!-- thanh cong cu -->
+      <div class="thanh-cong-cu">
+          <div class="carousel-container">
+              <!-- Nút điều hướng trái -->
+              <button aria-label="Trang danh mục trước" class="carousel-button prev-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false">
+                  <path d="m10.55.3 1.42 1.4L5.67 8l6.3 6.3-1.42 1.4-6.59-6.58a1.58 1.58 0 0 1-.1-2.13l.1-.11z"></path>
                 </svg>
-                <span>Bộ lọc</span>
-            </div>                   
-        </div>
-        <div class="toggle-container">
-            <span class="toggle-label">Hiển thị tổng trước thuế</span>
-            <div class="toggle-switch" onclick="toggleSwitch(this)"></div>
-            <script src="js/script.js"></script> 
-        </div>
-    </div>
+              </button>
+              
+              <!-- Vùng chứa các mục -->
+              <div class="carousel-track">
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt="Đảo">
+                  <span>Đảo</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="Biểu tượng">
+                  <span>Biểu tượng</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="Nhà khung">
+                  <span>Nhà khung</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="Lâu đài">
+                  <span>Lâu đài</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Bếp">
+                  <span>Bếp</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="Khung cảnh">
+                  <span>Khung cảnh</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Phòng">
+                  <span>Phòng</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="Ven hồ">
+                  <span>Ven hồ</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="Nông trại">
+                  <span>Nông trại</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg" alt="Bãi biển">
+                  <span>Bãi biển</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt="Phòng">
+                  <span>Phòng</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="Khung cảnh">
+                  <span>Khung cảnh</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="Hồ bơi">
+                  <span>Hồ bơi</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="Nông thôn">
+                  <span>Nông thôn</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="Nhà trên cây">
+                  <span>Nhà trên cây</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt="Nhà nhỏ">
+                  <span>Nhà nhỏ</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="Biệt thự">
+                  <span>Biệt thự</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt="Ưa chuộng">
+                  <span>Ưa chuộng</span>
+                </div>
+                <div class="box-item">
+                  <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="Cabin">
+                  <span>Cabin</span>
+                </div>
+              </div>
+              
+              <!-- Nút điều hướng phải -->
+              <button aria-label="Trang danh mục tiếp theo" class="carousel-button next-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false">
+                  <path d="M5.41.3 4 1.7 10.3 8 4 14.3l1.41 1.4 6.6-6.58c.57-.58.6-1.5.1-2.13l-.1-.11z"></path>
+                </svg>
+              </button>
+            </div>
+
+          <div class="filter-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" class="icon">
+              <path fill="none" d="M7 16H3m26 0H15M29 6h-4m-8 0H3m26 20h-4M7 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM17 6a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 20a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0H3"></path>
+              </svg>
+              <span>Bộ lọc</span>
+          </div>                   
+      </div>
+      <div class="toggle-container">
+          <span class="toggle-label">Hiển thị tổng trước thuế</span>
+          <div class="toggle-switch" onclick="toggleSwitch(this)"></div>
+          <script src="js/script.js"></script> 
+      </div>
+  </div>
 
 
-    <!-- danh sách phòng -->
-    <div class="room-list">
+  <!-- danh sách phòng -->
+  <div class="room-list">
 
-        
-        
-        <div class="content-container">
-            <p class="description">Tiếp tục khám phá danh mục</p>
-            <button class="show-more-btn">Hiển thị thêm</button>
-        </div>
+      
+      
+      <div class="content-container">
+          <p class="description">Tiếp tục khám phá danh mục</p>
+          <button class="show-more-btn">Hiển thị thêm</button>
+      </div>
 
-    </div>
+  </div>
 
-    <div class="inspiration-section">
-        <h2 class="section-title">Nguồn cảm hứng cho những kỳ nghỉ sau này</h2>
-        <div class="tab-menu">
-            <span class="tab active">Phổ biến</span>
-            <span class="tab">Văn hóa và nghệ thuật</span>
-            <span class="tab">Ngoài trời</span>
-            <span class="tab">Dãy núi</span>
-            <span class="tab">Bãi biển</span>
-            <span class="tab">Danh mục</span>
-            <span class="tab">Những điều nên trải nghiệm</span>
-        </div>
-        <hr class="divider">
-        <div class="location-list">
-            <div class="location-item">
-                <strong>Canmore</strong>
-                <p>Chỗ ở cho thuê phù hợp với thú cưng</p>
-            </div>
-            <div class="location-item">
-                <strong>Benalmádena</strong>
-                <p>Nhà cho thuê trên bãi biển</p>
-            </div>
-            <div class="location-item">
-                <strong>Marbella</strong>
-                <p>Nhà cho thuê trên bãi biển</p>
-            </div>
-            <div class="location-item">
-                <strong>Mijas</strong>
-                <p>Căn hộ cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Prescott</strong>
-                <p>Cabin cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Scottsdale</strong>
-                <p>Nhà cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Tucson</strong>
-                <p>Căn hộ cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Jasper</strong>
-                <p>Cabin cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Mountain View</strong>
-                <p>Chỗ ở cho thuê phù hợp với thú cưng</p>
-            </div>
-            <div class="location-item">
-                <strong>Devonport</strong>
-                <p>Nhà nghỉ thôn dã cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Mallacoota</strong>
-                <p>Nhà cho thuê trên bãi biển</p>
-            </div>
-            <div class="location-item">
-                <strong>Ibiza</strong>
-                <p>Nhà nghỉ dưỡng cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Santa Barbara</strong>
-                <p>Căn hộ cao cấp cho thuê</p>
-            </div>
-            <div class="location-item">
-                <strong>Sonoma</strong>
-                <p>Nhà cho thuê</p>
-            </div>
-            <div class="show-more">
-                <span>Hiển thị thêm &#9662;</span>
-            </div>
-        </div>
-    </div>
+  <div class="inspiration-section">
+      <h2 class="section-title">Nguồn cảm hứng cho những kỳ nghỉ sau này</h2>
+      <div class="tab-menu">
+          <span class="tab active">Phổ biến</span>
+          <span class="tab">Văn hóa và nghệ thuật</span>
+          <span class="tab">Ngoài trời</span>
+          <span class="tab">Dãy núi</span>
+          <span class="tab">Bãi biển</span>
+          <span class="tab">Danh mục</span>
+          <span class="tab">Những điều nên trải nghiệm</span>
+      </div>
+      <hr class="divider">
+      <div class="location-list">
+          <div class="location-item">
+              <strong>Canmore</strong>
+              <p>Chỗ ở cho thuê phù hợp với thú cưng</p>
+          </div>
+          <div class="location-item">
+              <strong>Benalmádena</strong>
+              <p>Nhà cho thuê trên bãi biển</p>
+          </div>
+          <div class="location-item">
+              <strong>Marbella</strong>
+              <p>Nhà cho thuê trên bãi biển</p>
+          </div>
+          <div class="location-item">
+              <strong>Mijas</strong>
+              <p>Căn hộ cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Prescott</strong>
+              <p>Cabin cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Scottsdale</strong>
+              <p>Nhà cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Tucson</strong>
+              <p>Căn hộ cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Jasper</strong>
+              <p>Cabin cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Mountain View</strong>
+              <p>Chỗ ở cho thuê phù hợp với thú cưng</p>
+          </div>
+          <div class="location-item">
+              <strong>Devonport</strong>
+              <p>Nhà nghỉ thôn dã cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Mallacoota</strong>
+              <p>Nhà cho thuê trên bãi biển</p>
+          </div>
+          <div class="location-item">
+              <strong>Ibiza</strong>
+              <p>Nhà nghỉ dưỡng cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Santa Barbara</strong>
+              <p>Căn hộ cao cấp cho thuê</p>
+          </div>
+          <div class="location-item">
+              <strong>Sonoma</strong>
+              <p>Nhà cho thuê</p>
+          </div>
+          <div class="show-more">
+              <span>Hiển thị thêm &#9662;</span>
+          </div>
+      </div>
+  </div>
 
-    <footer class="footer">
-        <div class="footer-columns">
-        <div class="footer-column">
-            <h3>Hỗ trợ</h3>
-            <ul>
-            <li><a href="#">Trung tâm trợ giúp</a></li>
-            <li><a href="#">AirCover</a></li>
-            <li><a href="#">Chống phân biệt đối xử</a></li>
-            <li><a href="#">Hỗ trợ người khuyết tật</a></li>
-            <li><a href="#">Các tùy chọn hủy</a></li>
-            <li><a href="#">Báo cáo lo ngại của khu dân cư</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Đón tiếp khách</h3>
-            <ul>
-            <li><a href="#">Cho thuê nhà trên Airbnb</a></li>
-            <li><a href="#">AirCover cho Chủ nhà</a></li>
-            <li><a href="#">Tài nguyên về đón tiếp khách</a></li>
-            <li><a href="#">Diễn đàn cộng đồng</a></li>
-            <li><a href="#">Đón tiếp khách có trách nhiệm</a></li>
-            <li><a href="#">Tham gia khóa học miễn phí về công việc Đón tiếp khách</a></li>
-            <li><a href="#">Tìm đồng chủ nhà</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Airbnb</h3>
-            <ul>
-            <li><a href="#">Trang tin tức</a></li>
-            <li><a href="#">Tính năng mới</a></li>
-            <li><a href="#">Cơ hội nghề nghiệp</a></li>
-            <li><a href="#">Nhà đầu tư</a></li>
-            <li><a href="#">Chỗ ở khẩn cấp Airbnb.org</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="footer-bottom">
-        <div class="footer-bottom-left">
-            <span>© 2024 Airbnb, Inc.</span>
-            <a href="#">Quyền riêng tư</a>
-            <a href="#">Điều khoản</a>
-            <a href="#">Sơ đồ trang web</a>
-        </div>
-        <div class="footer-bottom-right">
-            <a href="#"><img src="globe-icon.png" alt="Ngôn ngữ"> Tiếng Việt (VN)</a>
-            <a href="#">VND</a>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
-        </div>
-    </footer>
-
+  <footer class="footer">
+      <div class="footer-columns">
+      <div class="footer-column">
+          <h3>Hỗ trợ</h3>
+          <ul>
+          <li><a href="#">Trung tâm trợ giúp</a></li>
+          <li><a href="#">AirCover</a></li>
+          <li><a href="#">Chống phân biệt đối xử</a></li>
+          <li><a href="#">Hỗ trợ người khuyết tật</a></li>
+          <li><a href="#">Các tùy chọn hủy</a></li>
+          <li><a href="#">Báo cáo lo ngại của khu dân cư</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Đón tiếp khách</h3>
+          <ul>
+          <li><a href="#">Cho thuê nhà trên Airbnb</a></li>
+          <li><a href="#">AirCover cho Chủ nhà</a></li>
+          <li><a href="#">Tài nguyên về đón tiếp khách</a></li>
+          <li><a href="#">Diễn đàn cộng đồng</a></li>
+          <li><a href="#">Đón tiếp khách có trách nhiệm</a></li>
+          <li><a href="#">Tham gia khóa học miễn phí về công việc Đón tiếp khách</a></li>
+          <li><a href="#">Tìm đồng chủ nhà</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Airbnb</h3>
+          <ul>
+          <li><a href="#">Trang tin tức</a></li>
+          <li><a href="#">Tính năng mới</a></li>
+          <li><a href="#">Cơ hội nghề nghiệp</a></li>
+          <li><a href="#">Nhà đầu tư</a></li>
+          <li><a href="#">Chỗ ở khẩn cấp Airbnb.org</a></li>
+          </ul>
+      </div>
+      </div>
+      <div class="footer-bottom">
+      <div class="footer-bottom-left">
+          <span>© 2024 Airbnb, Inc.</span>
+          <a href="#">Quyền riêng tư</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Sơ đồ trang web</a>
+      </div>
+      <div class="footer-bottom-right">
+          <a href="#"><img src="globe-icon.png" alt="Ngôn ngữ"> Tiếng Việt (VN)</a>
+          <a href="#">VND</a>
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      </div>
+      </div>
+  </footer>
+  <script src="js/header-sign-up.js"></script>
+  <script src="js/dia-diem.js"></script>
+  <script src="js/lich.js"></script>
+  <script src="js/khach.js"></script>
+</body>
 </body>
 </html>

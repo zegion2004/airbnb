@@ -131,7 +131,8 @@
     border-radius: 20px;
 }
 
-.icon-dang-ki{
+/* Nút chính */
+.icon-dang-ki {
     display: flex;
     gap: 9px;
     width: 86px;
@@ -139,26 +140,72 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    border-width: 0.1px;
     border: 1px solid #ddd;
     border-radius: 30px;
     padding: 9px;
+    position: relative; /* Để định vị menu thả xuống */
+    cursor: pointer; /* Hiển thị con trỏ tay */
+}
+  
+.icon-dang-ki:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng khi hover */
+    transition: box-shadow 0.3s ease-in-out; /* Chuyển động mượt */
 }
 
-.icon-dang-ki:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Độ bóng */
+/* Hiệu ứng bóng khi nhấn */
+.icon-dang-ki:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng khi nhấn */
+    transform: scale(0.98); /* Hiệu ứng nhấn nút */
 }
-.three{
+
+/* Biểu tượng menu */
+.three {
     width: 16px;
     height: 16px;
-
 }
 
-.icon-person{
+/* Biểu tượng người dùng */
+.icon-person {
     width: 32px;
     height: 32px;
 }
 
+/* Menu thả xuống */
+.dropdown-menu {
+    display: none; /* Ẩn menu theo mặc định */
+    position: absolute;
+    top: 50px; /* Đặt menu dưới nút */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    height: auto;
+    width: 240px;
+    padding: 5px 0px;
+    margin-top: 10px; /* Tạo khoảng cách 10px giữa nút và menu */
+    
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size:14px;
+
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0; /* Hiệu ứng khi hover từng mục */
+}
+  
 
 /* thanh tim kiem*/
 .thanh-tim-kiem {
@@ -183,9 +230,52 @@
     background-color: #ffffff;
 }
 
-.muc-tim-kiem:hover {
-    background-color: #ddd;
+/* Hiệu ứng hover mặc định */
+.muc-tim-kiem {
+    transition: background-color 0.3s ease;
 }
+
+.muc-tim-kiem.dia-diem:hover {
+    background-color: #f5f5f5; /* Hiệu ứng hover khi chuột ở trên */
+}
+.muc-tim-kiem.nhan-phong:hover {
+    background-color: #f5f5f5; /* Hiệu ứng hover khi chuột ở trên */
+}
+.muc-tim-kiem.tra-phong:hover {
+    background-color: #f5f5f5; /* Hiệu ứng hover khi chuột ở trên */
+}
+.muc-tim-kiem.khach-noi-dung:hover {
+    background-color: #f5f5f5; /* Hiệu ứng hover khi chuột ở trên */
+}
+
+/* Hiệu ứng khi mục "Địa điểm" đang ở trạng thái active */
+.muc-tim-kiem.dia-diem.active {
+    background-color: #ddd; /* Màu nền khi đang active */
+}
+.muc-tim-kiem.nhan-phong.active {
+    background-color: #ddd; /* Màu nền khi đang active */
+}
+.muc-tim-kiem.tra-phong.active {
+    background-color: #ddd; /* Màu nền khi đang active */
+}
+.muc-tim-kiem.khach-noi-dung.active {
+    background-color: #ddd; /* Màu nền khi đang active */
+}
+
+
+.muc-tim-kiem.dia-diem.active:hover {
+    background-color: #ccc; /* Màu nền khi hover trong trạng thái active */
+}
+.muc-tim-kiem.nhan-phong.active:hover {
+    background-color: #ccc; /* Màu nền khi hover trong trạng thái active */
+}
+.muc-tim-kiem.tra-phong.active:hover {
+    background-color: #ccc; /* Màu nền khi hover trong trạng thái active */
+}
+.muc-tim-kiem.khach-noi-dung.active:hover {
+    background-color: #ccc; /* Màu nền khi hover trong trạng thái active */
+}
+
 
 .tieu-de {
     font-size: 12px;
