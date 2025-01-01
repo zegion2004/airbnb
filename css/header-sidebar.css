@@ -1,0 +1,309 @@
+/* Thiết lập phong cách cho logo-airbnb */
+.logo-airbnb {
+    display: inline-flex; /* Căn chỉnh icon và text theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    font-size: 14px; /* Kích thước chữ */
+    line-height: 20.02px; /* Khoảng cách giữa các dòng */
+    width: 450px;
+    height: 80px;
+}
+
+.logo-airbnb img {
+    width: 117px; /* Chiều rộng của icon */
+    height: 149px; /* Chiều cao của icon */
+}
+
+.lay-out-menu{
+    width: 450px;
+    height: 80px;
+}
+
+.trai-nghiem{
+    width: 450px;
+    height: 80px;
+}
+
+.header-bar {
+    display: flex;
+    width: 449px;
+    height: 48px;
+    margin: 18px 0px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    transition: all 0.3s ease;
+    color: #222;
+
+}
+
+
+.tab-cho-o{
+    width: 76px;
+    height: 44px;
+    display: inline-flex; /* Căn chỉnh icon và text theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    background-color: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tab-trai-nghiem{
+    width: 111px;
+    height: 44px;
+    display: inline-flex; /* Căn chỉnh icon và text theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    background-color: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.tab-cho-o:hover {
+    background-color: #F7F7F7;
+    border-radius: 20px;
+
+
+
+}
+.tab-trai-nghiem:hover {
+    background-color: #F7F7F7;
+    border-radius: 20px;
+
+}
+
+
+
+/* General styling for the container */
+.Cho-thue {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 457px;
+    height: 80px;
+    gap:5px;
+}
+.le-trai{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 446px;
+    height: auto;
+}
+
+.text-cho-thue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: auto;
+    font-weight:bold;
+    font-size: 14px;
+    padding:9px;
+}
+
+.text-cho-thue:hover{
+    background-color: #F7F7F7;
+    border-radius: 20px;
+
+
+}
+.world{
+    width: 16px;
+    height: 16px;
+}
+
+.icon-dia-cau{
+    width: 40px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon-dia-cau:hover{
+    background-color:#F7F7F7 ;
+    border-radius: 20px;
+}
+
+.icon-dang-ki{
+    display: flex;
+    gap: 9px;
+    width: 86px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-width: 0.1px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 9px;
+}
+
+.icon-dang-ki:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Độ bóng */
+}
+.three{
+    width: 16px;
+    height: 16px;
+
+}
+
+.icon-person{
+    width: 32px;
+    height: 32px;
+}
+
+
+/* thanh tim kiem*/
+.thanh-tim-kiem {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    width: 848px;
+    height: 64px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.muc-tim-kiem {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-color: #ffffff;
+    border-radius:32px;
+    border-style: solid;
+    border-width: 0.8px;
+    padding: 14px 32px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.muc-tim-kiem:hover {
+    background-color: #ddd;
+}
+
+.tieu-de {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+.noi-dung {
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+.nut-tim-kiem {
+    display: flex;
+    background-color: #ff3f68;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dia-diem {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 219px;
+    height: auto;
+}
+
+.dia-diem tieu-de{
+    width: 219px;
+    height: auto;
+}
+
+.dia-diem noi-dung{
+    width: 219px;
+    height: auto;
+}
+
+
+.nhan-phong {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 93px;
+    height: auto;
+}
+
+.nhan-phong tieu-de{
+    width: 93px;
+    height: auto;
+}
+
+.nhan-phong noi-dung{
+    width: 93px;
+    height: auto;
+}
+
+.tra-phong {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 93px;
+    height: auto;
+}
+
+.tra-phong tieu-de{
+    width: 93px;
+    height: auto;
+}
+
+.tra-phong noi-dung{
+    width: 93px;
+    height: auto;
+}
+
+
+.khach-noi-dung{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    height: auto;
+    cursor: pointer;
+    border-color: #ffffff;
+    border-radius:32px;
+    border-style: solid;
+    border-width: 0.8px;
+    background-color: #ffffff;
+}
+
+.khach-noi-dung:hover {
+    background-color: #ddd;
+}
+
+.khach-noi-dung tieu-de{
+    width: 184px;
+    height: auto;
+}
+
+.khach-noi-dung noi-dung{
+    width: 184px;
+    height: auto;
+}
+
+.khach {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 32px;
+    width: 115px;
+    height: auto;
+}
+
+.thanh-phan-cach {
+    width: 0.8px; /* Độ dày của thanh */
+    height: 30px; /* Chiều cao của thanh */
+    background-color: #ddd; /* Màu sắc của thanh */
+    margin: 17px 0px; /* Khoảng cách hai bên */
+}

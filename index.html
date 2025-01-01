@@ -10,126 +10,173 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/sidebar-header.css">
+    <link rel="stylesheet" href="css/header-sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <div class="header">
         <div class="lay-out-menu">
             <!-- Logo -->
-            <div class="logo-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 375" width="50" height="50">
-                    <path fill="#ff385c" d="M 173.832031 72.257812 C 165.585938 75.214844 160.167969 79.523438 155.488281 86.664062 C 143.300781 105.5 96.269531 203.503906 92.945312 216.921875 C 89.621094 230.464844 93.929688 244.378906 104.640625 254.84375 C 114.613281 264.449219 125.449219 267.894531 139.976562 266.046875 C 152.042969 264.449219 167.308594 255.828125 178.144531 244.257812 C 180.234375 242.164062 182.328125 240.4375 182.945312 240.4375 C 183.558594 240.4375 187.871094 243.886719 192.425781 248.195312 C 197.101562 252.382812 204.984375 258.046875 209.90625 260.753906 C 218.773438 265.554688 219.019531 265.679688 231.824219 265.679688 C 243.640625 265.679688 245.367188 265.308594 251.273438 262.230469 C 269.375 252.75 278.855469 232.066406 273.066406 214.460938 C 268.144531 199.5625 221.359375 102.792969 211.878906 88.140625 C 202.890625 74.105469 187.128906 67.457031 173.832031 72.257812 Z M 194.765625 86.542969 C 201.414062 91.464844 201.78125 91.957031 223.082031 134.558594 C 252.875 194.269531 261.617188 213.96875 262.355469 222.832031 C 263.21875 234.652344 258.910156 243.023438 248.074219 250.535156 C 242.78125 254.230469 241.550781 254.597656 233.054688 254.597656 C 225.175781 254.597656 222.589844 253.980469 215.695312 250.535156 C 211.140625 248.320312 203.875 243.269531 199.195312 238.960938 L 190.949219 231.207031 L 197.964844 220.742188 C 211.140625 201.164062 215.816406 189.097656 215.816406 175.1875 C 215.816406 168.90625 215.078125 165.582031 212.617188 160.535156 C 203.136719 141.574219 175.1875 137.019531 160.167969 152.039062 C 153.148438 159.058594 150.5625 165.335938 150.5625 176.171875 C 150.5625 188.484375 156.71875 204.121094 167.308594 219.015625 C 173.339844 227.511719 174.820312 230.34375 173.832031 231.945312 C 171.742188 235.882812 156.472656 247.949219 149.824219 251.027344 C 146.253906 252.628906 139.976562 254.351562 136.035156 254.722656 C 129.878906 255.460938 127.664062 255.089844 122.125 252.503906 C 108.949219 246.472656 102.917969 236.5 104.148438 222.832031 C 104.640625 216.921875 106.488281 211.261719 112.519531 197.964844 C 124.957031 170.386719 162.507812 95.773438 166.078125 91.589844 C 173.832031 82.230469 185.898438 80.261719 194.765625 86.542969 Z M 192.300781 156.71875 C 208.921875 165.089844 208.554688 182.449219 191.195312 209.535156 C 187.746094 214.953125 184.050781 219.507812 183.191406 219.507812 C 181.097656 219.507812 169.769531 202.027344 166.078125 193.039062 C 162.136719 183.1875 161.152344 175.679688 162.875 169.03125 C 166.078125 156.964844 180.851562 150.808594 192.300781 156.71875 Z" />
-                </svg>
-                <span>airbnb</span>
-            </div>
-    
-            <!-- Navigation -->
-            <nav class="nav">
-                <a href="#" class="nav-item active">Chỗ ở</a>
-                <a href="#" class="nav-item">Trải nghiệm</a>
-            </nav>
-    
-            <!-- Menu -->
-            <div class="menu">
-                <a href="#" class="menu-item">Cho thuê chỗ ở qua Airbnb</a>
-                <button class="language-btn">
-                    <img src="https://img.pikbest.com/element_our/20230314/bg/50b936af08408.png" alt="Language" class="language-svg">
-                </button>
-
-                <button type="button" class="menu-button" aria-expanded="false" aria-label="Menu điều hướng chính">
-
-                    <div class="menu-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" class="hamburger-icon"><g fill="none"><path d="M2 16h28M2 24h28M2 8h28"></path></g></svg>
-                    </div>
-
-                    <div class="profile-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" class="user-icon"><path d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16 .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5 14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67 0 0 1 16 28.7z"></path></svg>
-                    </div>
-                </button>
+            <div class="logo-airbnb">
+                <img src="assets/icons/airbnb.svg" class="logo" alt="airbnb" />
             </div>
         </div>
-        <!-- Thanh tìm kiếm -->
-        <div class="new-search-bar">
-            <!-- Địa điểm -->
-            <div class="new-search-item">
-                <label>Địa điểm</label>
-                <input type="text" placeholder="Nhập điểm đến">
+              
+        <div class="trai-nghiem">
+            <div class="header-bar">
+                <div class="tab-cho-o" >Chỗ ở</div >
+                <div class="tab-trai-nghiem" >Trải nghiệm</div>
             </div>
-            
-            <div class="new-separator"></div>
-
-            <!-- Ngày nhận phòng -->
-            <div class="new-search-item">
-                <label>Nhận phòng</label>
-                <input type="date">
-            </div>
-            
-            <div class="new-separator"></div>
-
-            <!-- Ngày trả phòng -->
-            <div class="new-search-item">
-                <label>Trả phòng</label>
-                <input type="date">
-            </div>
-            
-            <div class="new-separator"></div>
-
-            <!-- Khách -->
-            <div class="new-search-item">
-                <label>Khách</label>
-                <select>
-                    <option>1 khách</option>
-                    <option>2 khách</option>
-                    <option>3 khách</option>
-                    <option>4+ khách</option>
-                </select>
-            </div>
-
-            <!-- Nút tìm kiếm -->
-            <button class="new-search-button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                    <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
-                </svg>
-            </button>
         </div>
-    </header>
+
+        <div class="Cho-thue">
+
+            <div class="le-trai">
+                <div class="text-cho-thue">Cho thuê chỗ ở qua Airbnb</div>
+
+                <div class="icon-dia-cau">
+                    <img src="assets/icons/icon_world.svg" class="world" alt="dia-cau">
+                </div>
+            </div>
+            
+            <div class="icon-dang-ki">
+                <img src="assets/icons/three_icon.svg" class="three" alt="three-icon">
+                <img src="assets/icons/logo_the_gioi.svg" class="icon-person" alt="person">
+            </div>
+        </div>
+        
+        <div class="thanh-tim-kiem">
+            <div class="muc-tim-kiem dia-diem">
+                <span class="tieu-de">Địa điểm</span>
+                <span class="noi-dung">Tìm kiếm điểm đến</span>
+            </div>
+            <div class="thanh-phan-cach"></div>
+            <div class="muc-tim-kiem nhan-phong">
+                <span class="tieu-de">Nhận phòng</span>
+                <span class="noi-dung">Thêm ngày</span>
+            </div>
+            <div class="thanh-phan-cach"></div>
+            <div class="muc-tim-kiem tra-phong">
+                <span class="tieu-de">Trả phòng</span>
+                <span class="noi-dung">Thêm ngày</span>
+            </div>
+            <div class="thanh-phan-cach"></div>
+            <div class="khach-noi-dung">
+                <div class="khach">
+                    <span class="tieu-de">Khách</span>
+                    <span class="noi-dung">Thêm khách</span>
+                </div>
+                <div class="nut-tim-kiem">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: white; stroke-width: 4; overflow: visible;">
+                        <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                    </svg>                    
+                </div>
+            </div>
+        </div>
+          
+    </div>
 
     <! thanh điều hướng !>
     <div class="thanh-dieu-huong">
         <!-- thanh cong cu -->
         <div class="thanh-cong-cu">
-            <div class="menu-bar">
-                <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt="Đảo" />
+            <div class="carousel-container">
+                <!-- Nút điều hướng trái -->
+                <button aria-label="Trang danh mục trước" class="carousel-button prev-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false">
+                    <path d="m10.55.3 1.42 1.4L5.67 8l6.3 6.3-1.42 1.4-6.59-6.58a1.58 1.58 0 0 1-.1-2.13l.1-.11z"></path>
+                  </svg>
+                </button>
+                
+                <!-- Vùng chứa các mục -->
+                <div class="carousel-track">
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt="Đảo">
                     <span>Đảo</span>
-                </div>
-                <div class="box-item">
-                    <img src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="Biểu tượng" />
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="Biểu tượng">
                     <span>Biểu tượng</span>
-                </div>
-                <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="Nhà khung chữ A" />
-                    <span>Nhà khung chữ A</span>
-                </div>
-                <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="Lâu đài" />
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="Nhà khung">
+                    <span>Nhà khung</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="Lâu đài">
                     <span>Lâu đài</span>
-                </div>
-                <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Bếp của bếp trưởng" />
-                    <span>Bếp của bếp trưởng</span>
-                </div>
-                <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Phòng" />
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Bếp">
+                    <span>Bếp</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="Khung cảnh">
+                    <span>Khung cảnh</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Phòng">
                     <span>Phòng</span>
-                </div>
-                <div class="box-item">
-                    <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="Khung cảnh tuyệt vời" />
-                    <span>Khung cảnh tuyệt vời</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="Ven hồ">
+                    <span>Ven hồ</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="Nông trại">
+                    <span>Nông trại</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg" alt="Bãi biển">
+                    <span>Bãi biển</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt="Phòng">
+                    <span>Phòng</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="Khung cảnh">
+                    <span>Khung cảnh</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="Hồ bơi">
+                    <span>Hồ bơi</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="Nông thôn">
+                    <span>Nông thôn</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="Nhà trên cây">
+                    <span>Nhà trên cây</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt="Nhà nhỏ">
+                    <span>Nhà nhỏ</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="Biệt thự">
+                    <span>Biệt thự</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt="Ưa chuộng">
+                    <span>Ưa chuộng</span>
+                  </div>
+                  <div class="box-item">
+                    <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="Cabin">
+                    <span>Cabin</span>
+                  </div>
                 </div>
                 
-            </div>
+                <!-- Nút điều hướng phải -->
+                <button aria-label="Trang danh mục tiếp theo" class="carousel-button next-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false">
+                    <path d="M5.41.3 4 1.7 10.3 8 4 14.3l1.41 1.4 6.6-6.58c.57-.58.6-1.5.1-2.13l-.1-.11z"></path>
+                  </svg>
+                </button>
+              </div>
 
             <div class="filter-button">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" class="icon">
@@ -149,211 +196,7 @@
     <!-- danh sách phòng -->
     <div class="room-list">
 
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">1–6 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
-
-
-        <div class="property-card">
-            <div class="image-container">
-                <img src="https://a0.muscache.com/im/pictures/9a7a34b1-6e8b-4052-bca7-984f25cf2b53.jpg?im_w=720&im_format=avif" alt="Ảnh nhà" class="property-image">
-                <div class="heart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false">
-                        <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-                    </svg>
-                </div>
-            </div>
-
-            <div class="property-details">
-                <p class="property-location">IN, Ấn Độ</p>
-                <p class="property-distance">Cách 3.240 km</p>
-                <p class="property-date">16 thg 1</p>
-                <p class="property-price">đ3.594.731 / đêm</p>
-            </div>
-        </div>
+        
         
         <div class="content-container">
             <p class="description">Tiếp tục khám phá danh mục</p>

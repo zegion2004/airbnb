@@ -8,39 +8,125 @@
   display: flex;
   align-items: center;
 }
-.menu-bar {
+
+/* Tổng thể container */
+.carousel-container {
   display: flex;
-  justify-content: space-between;
-  width:900px;
-  height: 75px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ẩn nội dung tràn ra ngoài */
+  position: relative;
+  padding: 5px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
+/* Vùng chứa các mục carousel */
+.carousel-track {
+  display: flex;    
+  transition: transform 0.3s ease-in-out;
+  scroll-behavior: smooth; /* Hiệu ứng cuộn mượt */
+  overflow: hidden; /* Ẩn nội dung thừa */
+}
+
+/* Phần tử mỗi mục */
 .box-item {
   display: flex;
   flex-direction: column;
-  gap: var(--linaria-theme_spacing-micro8px);
   align-items: center;
-  margin: 10px 0px;
-  padding: 4px 0px;
-  color: #6a6a6a;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  height: 56px;
+  min-width: 100px;
+  margin:4px;
 }
+
+
 
 .box-item img {
   width: 24px;
   height: 24px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
 }
 
 .box-item span {
   font-size: 14px;
   font-weight: 500;
-  margin: 4px;;
+  color: #222;
 }
 
 .box-item:hover {
-  color: #222;
-  cursor: pointer;
-  filter: brightness(1.2);
+  color: #222222;
+  margin:0px 4px 5px 4px;
+  border-bottom: 2px solid #222;
 }
+
+/* Nút điều hướng */
+.carousel-button {
+  background: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Giữ vị trí giữa */
+  box-shadow: rgb(0% 0% 0% / 0.01) 0px 0.675735px 1.80196px 0px;
+
+}
+
+/* Biểu tượng SVG trong nút */
+.carousel-button svg {
+  width: 12px;
+  height: 12px;
+  fill: #222222;
+}
+
+.carousel-button:hover {
+  background-color: #e6e6e6; /* Nền nhẹ khi hover */
+}
+
+.carousel-button:active {
+  background-color: #cccccc; /* Màu đậm hơn khi nhấn */
+}
+
+/* Nút phía bên trái */
+.prev-button {
+  left: 15px; /* Khoảng cách từ lề trái */
+  border: 1px solid #ddd; /* Thêm viền màu #ddd */
+}
+
+/* Nút phía bên phải */
+.next-button {
+  right: 15px; /* Khoảng cách từ lề phải */
+  border: 1px solid #ddd; /* Thêm viền màu #ddd */
+}
+
+/* Cuộn ngang bằng scrollbar (trong trường hợp sử dụng) */
+.carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 3px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb:hover {
+  background-color: #bbbbbb;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+  border-radius: 3px;
+}
+
 
 /*chỉnh sửa icon bộ lọc */
 .filter-button {
