@@ -1,0 +1,161 @@
+
+.thai-lan-vnd{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 405px;
+    width: 322px;
+}
+
+.carousel-card-vnd {
+    width: 322px;
+    height: 306px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-container-vnd {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images-vnd {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images-vnd img {
+    width: 322px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel-btn-vnd {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-card-vnd:hover .carousel-btn-vnd {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-btn-vnd.left-vnd {
+    left: 10px;
+}
+
+.carousel-btn-vnd.right-vnd {
+    right: 10px;
+}
+
+.carousel-btn-vnd svg {
+    width: 16px;
+    height: 16px;
+    stroke: #222222;
+    stroke-width: 5;
+    fill: none;
+}
+
+.carousel-btn-vnd:hover {
+    background-color: #ddd;
+}
+
+.carousel-indicators-vnd {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.carousel-indicators-vnd div {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators-vnd .active-vnd {
+    background-color: #fff;
+}
+
+.like-icon-vnd {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.like-icon-vnd:hover {
+    fill: #ff5a5f;
+}
+
+.badge-vnd {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.listing-vnd {
+    color: #222;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    width: 325px;
+    height: 105px;
+
+}
+
+.location-vnd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-vnd {
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.distance-vnd,
+.details-vnd,
+.price-vnd {
+    margin-top: 5px;
+}
+
+.price-bold-vnd {
+    font-weight: bold;
+}

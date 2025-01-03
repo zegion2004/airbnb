@@ -1,0 +1,33 @@
+.fixed-button {
+    position: fixed;
+    bottom: 20px; /* Khoảng cách từ đáy trang */
+    right: 20px; /* Khoảng cách từ mép phải */
+    background-color: #000; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 10px 20px;
+    border-radius: 20px; /* Bo tròn các góc */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000; /* Đảm bảo luôn hiển thị trên các phần tử khác */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .fixed-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa text và icon */
+  }
+  
+  .ban-do {
+    width: 16px;
+    height: 16px;
+    fill: #fff; /* Màu của icon */
+  }
+  

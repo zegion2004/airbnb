@@ -3,7 +3,7 @@
     padding: 0 80px;
     display: flex; /* Kích hoạt Flexbox */
     flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ không gian */
-    gap: 25px; /* Khoảng cách giữa các phần tử */
+    gap: 23px; /* Khoảng cách giữa các phần tử */
     justify-content: flex-start; /* Sắp xếp phần tử từ trái sang phải */
     align-items: flex-start; /* Căn phần tử theo trục dọc */
 }

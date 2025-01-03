@@ -1,0 +1,161 @@
+
+.thai-lan-vnc{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 405px;
+    width: 322px;
+}
+
+.carousel-card-vnc {
+    width: 322px;
+    height: 306px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-container-vnc {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images-vnc {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images-vnc img {
+    width: 322px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel-btn-vnc {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-card-vnc:hover .carousel-btn-vnc {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-btn-vnc.left-vnc {
+    left: 10px;
+}
+
+.carousel-btn-vnc.right-vnc {
+    right: 10px;
+}
+
+.carousel-btn-vnc svg {
+    width: 16px;
+    height: 16px;
+    stroke: #222222;
+    stroke-width: 5;
+    fill: none;
+}
+
+.carousel-btn-vnc:hover {
+    background-color: #ddd;
+}
+
+.carousel-indicators-vnc {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.carousel-indicators-vnc div {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators-vnc .active-vnc {
+    background-color: #fff;
+}
+
+.like-icon-vnc {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.like-icon-vnc:hover {
+    fill: #ff5a5f;
+}
+
+.badge-vnc {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.listing-vnc {
+    color: #222;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    width: 325px;
+    height: 105px;
+
+}
+
+.location-vnc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-vnc {
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.distance-vnc,
+.details-vnc,
+.price-vnc {
+    margin-top: 5px;
+}
+
+.price-bold-vnc {
+    font-weight: bold;
+}

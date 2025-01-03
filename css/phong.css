@@ -1,0 +1,161 @@
+
+.thai-lan-phong{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 405px;
+    width: 322px;
+}
+
+.carousel-card-phong {
+    width: 322px;
+    height: 306px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-container-phong {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images-phong {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images-phong img {
+    width: 322px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel-btn-phong {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-card-phong:hover .carousel-btn-phong {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-btn-phong.left-phong {
+    left: 10px;
+}
+
+.carousel-btn-phong.right-phong {
+    right: 10px;
+}
+
+.carousel-btn-phong svg {
+    width: 16px;
+    height: 16px;
+    stroke: #222222;
+    stroke-width: 5;
+    fill: none;
+}
+
+.carousel-btn-phong:hover {
+    background-color: #ddd;
+}
+
+.carousel-indicators-phong {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.carousel-indicators-phong div {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators-phong .active-phong {
+    background-color: #fff;
+}
+
+.like-icon-phong {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.like-icon-phong:hover {
+    fill: #ff5a5f;
+}
+
+.badge-phong {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.listing-phong {
+    color: #222;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    width: 325px;
+    height: 105px;
+
+}
+
+.location-phong {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-phong {
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.distance-phong,
+.details-phong,
+.price-phong {
+    margin-top: 5px;
+}
+
+.price-bold-phong {
+    font-weight: bold;
+}
