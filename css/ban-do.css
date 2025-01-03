@@ -1,33 +1,48 @@
 .fixed-button {
-    position: fixed;
-    bottom: 20px; /* Khoảng cách từ đáy trang */
-    right: 20px; /* Khoảng cách từ mép phải */
-    background-color: #000; /* Màu nền */
-    color: #fff; /* Màu chữ */
-    padding: 10px 20px;
-    border-radius: 20px; /* Bo tròn các góc */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    z-index: 1000; /* Đảm bảo luôn hiển thị trên các phần tử khác */
-    transition: transform 0.2s ease-in-out;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 694px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 1; /* Hiển thị mặc định */
+  transform: translateY(0);
+}
+
+.fixed-button span{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fixed-button.hidden {
+  opacity: 0; /* Ẩn nút */
+  transform: translateY(20px); /* Di chuyển xuống */
+  pointer-events: none; /* Vô hiệu hóa tương tác khi ẩn */
+}
+
   
-  .fixed-button:hover {
-    transform: scale(1.05);
-  }
-  
-  .button-content {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Khoảng cách giữa text và icon */
-  }
-  
-  .ban-do {
-    width: 16px;
-    height: 16px;
-    fill: #fff; /* Màu của icon */
-  }
-  
+.fixed-button:hover {
+  transform: scale(1.05);
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Khoảng cách giữa text và icon */
+}
+
+.ban-do {
+  width: 16px;
+  height: 16px;
+  fill: #fff; /* Màu của icon */
+}
+
+
