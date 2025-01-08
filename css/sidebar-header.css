@@ -1,6 +1,7 @@
 
 .thanh-dieu-huong {
   display: flex;
+  margin-top: 167px;
   padding : 10px 80px;
   align-items: center;
 }

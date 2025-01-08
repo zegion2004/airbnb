@@ -14,6 +14,7 @@ document.addEventListener('click', function (event) {
 function toggleSearchArea() {
     const searchArea = document.getElementById('searchArea');
     const diaDiem = document.querySelector('.muc-tim-kiem.dia-diem');
+    const header = document.querySelector('.header'); // Header
 
     // Bật/tắt trạng thái active
     searchArea.classList.toggle('active');

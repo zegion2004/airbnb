@@ -6,16 +6,19 @@
     line-height: 20.02px; /* Khoảng cách giữa các dòng */
     width: 450px;
     height: 80px;
+
 }
 
-.logo-airbnb img {
+.logo-airbnb svg {
     width: 117px; /* Chiều rộng của icon */
     height: 149px; /* Chiều cao của icon */
+
 }
 
 .lay-out-menu{
     width: 450px;
     height: 80px;
+
 }
 
 .trai-nghiem{

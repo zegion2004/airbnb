@@ -10,5 +10,42 @@
   height: auto;
   padding-bottom: 22px;
   border-bottom: 1px solid #ddd; /* Màu viền */
+  position: fixed; /* Cố định vị trí header */
+  top: 0; /* Đặt ở đầu trang */
+  left: 0; /* Canh bên trái */
+  z-index: 9999; /* Đảm bảo header luôn nằm trên các thành phần khác */
+  background-color: #fff;
 }
+
+/* Header khi thu gọn */
+.header.shrink {
+  height: 60px; /* Giảm chiều cao */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo đổ bóng */
+}
+
+/* Thanh tìm kiếm khi rút gọn */
+.header.shrink .thanh-tim-kiem {
+  width: 600px; /* Giảm chiều rộng */
+  height: 48px; /* Giảm chiều cao */
+}
+
+/* Ẩn phần trai-nghiem */
+.trai-nghiem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.header.shrink .trai-nghiem {
+  opacity: 0; /* Làm mờ dần */
+  visibility: hidden; /* Ẩn hoàn toàn */
+}
+
+/* Nội dung thanh tìm kiếm trong trạng thái rút gọn */
+.header.shrink .muc-tim-kiem {
+  font-size: 14px; /* Giảm kích thước chữ */
+  padding: 10px 16px; /* Giảm padding */
+}
+
 
