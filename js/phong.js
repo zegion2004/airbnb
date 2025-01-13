@@ -23,6 +23,7 @@ leftBtnPhong.addEventListener('click', () => {
     if (currentIndexPhong > 0) {
         currentIndexPhong--;
         updateCarouselPhong();
+        console.log(leftBtnPhong);
     }
 });
 
